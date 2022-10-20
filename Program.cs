@@ -12,4 +12,4 @@ foreach(string item in mas)
 //удаляем Null элементы
 res = res.Where(item => item != null).ToArray();
 
-
+Console.WriteLine("[" +String.Join(", ", mas) +"] -> [" + String.Join(", ", res)+"] \n");
