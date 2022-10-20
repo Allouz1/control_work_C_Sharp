@@ -9,3 +9,7 @@ foreach(string item in mas)
         res[i++] = item;
     }
 }
+//удаляем Null элементы
+res = res.Where(item => item != null).ToArray();
+
+
